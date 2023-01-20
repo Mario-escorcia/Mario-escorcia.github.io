@@ -75,3 +75,18 @@ Animation(project5,400,1500,"left","300px")
 Animation(knowCont,400,1500,"left","300px")
 Animation(contactCont,400,1500,"right","300px")
 Animation(creditCont,400,1500,"left","300px")
+
+// navbar scroll
+
+let navUbication = window.pageYOffset
+let navegation = document.querySelector("#nav")
+
+window.addEventListener("scroll" , ()=>{
+    let currentLocation = window.pageYOffset;
+    if (navUbication >= currentLocation) {
+        navegation.style.top ="8px";
+    } else{
+        navegation.style.top ="-100px";
+    }
+    navUbication = currentLocation;
+})
