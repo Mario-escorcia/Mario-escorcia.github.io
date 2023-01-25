@@ -90,3 +90,14 @@ window.addEventListener("scroll" , ()=>{
     }
     navUbication = currentLocation;
 })
+
+
+
+// menu responsive
+
+// let nav_menu = document.getElementById("nav")
+// let icon_menu = document.getElementById("icon--menu")
+
+// icon_menu.addEventListener("click",()=>{
+//     nav_menu.classList.toggle("toogle-menu")
+// })

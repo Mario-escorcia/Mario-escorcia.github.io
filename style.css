@@ -4,6 +4,7 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 ::selection{
@@ -40,7 +41,7 @@ body{
     padding-left: 7%;
     padding-right: 7%;
     position: relative;
-    overflow-x: hidden;
+    
 }
 
 body::after{
@@ -82,7 +83,7 @@ nav{
     justify-content: space-between;
     padding: 10px;
     margin-left: 10%;
-    background-color: rgba(10, 25, 47, 0.85);
+    background-color:var(--green-tint);
     backdrop-filter: blur(10px);
     border-radius: 25px;
     z-index: 10;
@@ -91,6 +92,7 @@ nav{
     left: 0;
     transition: all var(--transitions);
 }
+
 
 .navbar--icon{
     width: auto;
@@ -115,7 +117,7 @@ nav i{
     color: var(--green);
     font-weight: 100;
     font-size: 
-    var(--fz-xxl);
+    var(--fz-md);
     cursor: pointer;
     transition: var(--transitions);
 }
@@ -573,4 +575,32 @@ nav ul li a:hover{
     transform-origin:bottom left;
     background-color: var(--green);
     transition:  transform var(--transitions);
+}
+
+@media screen and (max-width : 425px) {
+    nav{
+        width: 100vw;
+        height: 50px;
+        margin-left: 0;
+    }    
+    .navbar--icon{
+        display: none;
+    }
+
+    nav ul{
+        display: flex;
+        gap: 15px;
+        align-items: center;
+        justify-content: space-around;
+        margin: auto 20px;
+    }
+    nav ul li a{
+        font-size: 10px;
+        font-weight: 400;
+        letter-spacing: .5px;
+    }
+
+    nav i{
+        font-size:10px;
+    }
 }
