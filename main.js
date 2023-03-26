@@ -6,12 +6,13 @@ let buttonProjects = document.getElementById("btn-projects")
 let buttonknowledge = document.getElementById("btn-knowledge")
 let buttonEmail = document.getElementById("btn-contact")
 
+let buton_scroll_top = document.getElementById("up--btn")
 
-// funtions
+
+// functions
 
 function scrollPage(value1 , value2) {
     window.scroll(value1,value2)
-
 }
 
 function Animation(target,delay,duration,origin,distance) {
@@ -30,6 +31,10 @@ function Animation(target,delay,duration,origin,distance) {
 
 
 // execute listeners
+
+buton_scroll_top.addEventListener(("click"),()=>{
+    scrollPage(0,0)
+})
 
 buttonHero.addEventListener("click" , ()=>{
     scrollPage(0,400)
@@ -91,13 +96,3 @@ window.addEventListener("scroll" , ()=>{
     navUbication = currentLocation;
 })
 
-
-
-// menu responsive
-
-// let nav_menu = document.getElementById("nav")
-// let icon_menu = document.getElementById("icon--menu")
-
-// icon_menu.addEventListener("click",()=>{
-//     nav_menu.classList.toggle("toogle-menu")
-// })
