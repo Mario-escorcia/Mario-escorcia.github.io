@@ -68,18 +68,18 @@ const contactCont = document.getElementById("contact");
 const creditCont = document.getElementById("credit-cont");
 
 
-Animation(navbar,400,1500,"top","50px")
-Animation(hero,400,1500,"left","300px")
-Animation(about,400,1500,"left","300px")
-Animation(projectCont,400,1500,"left","300px")
-Animation(project1,400,1500,"left","300px")
-Animation(project2,400,1500,"right","300px")
-Animation(project3,400,1500,"left","300px")
-Animation(project4,400,1500,"right","300px")
-Animation(project5,400,1500,"left","300px")
-Animation(knowCont,400,1500,"left","300px")
-Animation(contactCont,400,1500,"right","300px")
-Animation(creditCont,400,1500,"left","300px")
+Animation(navbar,200,1000,"top","50px")
+Animation(hero,200,1000,"left","300px")
+Animation(about,200,1000,"left","300px")
+Animation(projectCont,200,1000,"left","300px")
+Animation(project1,200,1000,"left","300px")
+Animation(project2,200,1000,"right","300px")
+Animation(project3,200,1000,"left","300px")
+Animation(project4,200,1000,"right","300px")
+Animation(project5,200,1000,"left","300px")
+Animation(knowCont,200,1000,"left","300px")
+Animation(contactCont,200,1000,"right","300px")
+Animation(creditCont,200,1000,"left","300px")
 
 // navbar scroll
 
